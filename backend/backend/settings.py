@@ -30,15 +30,23 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'rest_framework.authtoken',
+    'rest_framework',
+    'import_export',
+
+    'phonenumber_field',
+    'django_countries',
+    #'languages',
     'core',
     'corsheaders',
-    'rest_framework',
     'django_extensions',
 ]
 
@@ -58,7 +66,7 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -131,7 +139,47 @@ CORS_ORIGIN_WHITELIST = ['http://127.0.0.1:3000',]
 
 STATIC_URL = 'static/'
 
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS = {
+    "site_title": "JUICEME Admin",
+    "site_header": "JUICEME",
+    "site_brand": "JUICEME",
+    #"site_logo": "images/logo.png",
+    "site_logo_classes": "img-circle",
+    "copyright": "B2Dev Studio",
+    "search_model": "auth.User",
+    "user_avatar": None,
+    "topmenu_links": [
+        {"name": "Home",  "url": "admin:index",
+            "permissions": ["auth.view_user"]},
+        {"model": "auth.User"},
+        {"app": "core"},
+    ],
+    "usermenu_links": [
+        {"name": "Accueil", "url": "/", "new_window": False},
+        {"model": "auth.user"}
+    ],
+    "show_sidebar": True,
+    "navigation_expanded": True,
+    "hide_apps": [],
+    "hide_models": [],
+    "icons": {
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "auth.Group": "fas fa-users",
+    },
+    "default_icon_parents": "fas fa-chevron-circle-right",
+    "default_icon_children": "fas fa-circle",
+    "related_modal_active": False,
+    "custom_css": None,
+    "custom_js": None,
+    "show_ui_builder": False,
+    "changeform_format": "horizontal_tabs",
+    "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
+}
