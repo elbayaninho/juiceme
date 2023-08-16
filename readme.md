@@ -5,7 +5,7 @@ This project was create with JUICEME Team
 
 # How to run this project ?
 
-# There are two folder (backend => django and frontend => reactjs)
+# There are two folders (backend => django and frontend => reactjs)
 
 # 1. Run the django project
 
