@@ -4,6 +4,8 @@
   font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  --primary-color: "#0F4C81",
+  --black-color: '#111'
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;

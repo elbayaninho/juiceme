@@ -1,0 +1,11 @@
+@import '../Shared/colors.scss';
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.nav-link{
+    color: $color-black;
+}
