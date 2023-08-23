@@ -25,7 +25,7 @@ nav {
         letter-spacing: -0.00313rem;
     }
     .btn:hover{
-        background-color: $color-primary;
+        background-color: $color-primary !important;
         .nav-link{
             color: $color-white;
         }
@@ -33,7 +33,7 @@ nav {
     .btn {
         border-radius: 0.5rem;
         border: 1px solid $color-primary;
-
+        background-color: $color-white !important;
         .nav-link{
             padding: 0 !important;
         }
