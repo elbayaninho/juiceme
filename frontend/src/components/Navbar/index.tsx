@@ -9,11 +9,13 @@ const NavbarParent = () => {
       <Container>
         <Navbar.Brand href="#home"><img alt='Juiceme Logo' src={logo} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-toggle" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse>
           <Nav  >
             <Nav.Link href="#home">Products</Nav.Link>
             <Nav.Link href="#link">Contact Us</Nav.Link>
-            <Nav.Link href="signin">Sign In</Nav.Link>
+            <button className="btn" type="button">
+              <Nav.Link href="/signin">Sign In</Nav.Link>
+            </button>
           </Nav>
         </Navbar.Collapse>
       </Container>

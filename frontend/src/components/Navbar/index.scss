@@ -1,11 +1,43 @@
-@import '../Shared/colors.scss';
+@import "../Shared/colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Prompt:wght@200&display=swap");
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         display: flex;
         justify-content: flex-end;
     }
+    .navbar-expand-lg .navbar-nav {
+        align-items: center;
+    }
 }
-.nav-link{
-    color: $color-black;
+
+nav {
+    .navbar-nav{
+        gap:4.5rem;
+    }
+    .nav-link {
+        color: $color-black;
+        font-family: "Nunito", sans-serif;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.00313rem;
+    }
+    .btn:hover{
+        background-color: $color-primary;
+        .nav-link{
+            color: $color-white;
+        }
+    }
+    .btn {
+        border-radius: 0.5rem;
+        border: 1px solid $color-primary;
+
+        .nav-link{
+            padding: 0 !important;
+        }
+    }
+
+
 }
