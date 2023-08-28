@@ -1,0 +1,106 @@
+@import "../../components/Shared/colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Prompt:wght@200&display=swap");
+
+.container {
+    display: flex;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    color: $color-primary;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.0075rem;
+}
+
+p {
+    color: $color-black;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.005rem;
+    margin-top: 0.5rem;
+
+    a {
+        font-size: 0.875rem;
+        font-style: normal;
+        text-decoration: none;
+        color: $color-primary;
+        font-family: "Nunito", sans-serif;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.00438rem;
+    }
+}
+
+.form-label {
+    color: $color-black;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.00438rem;
+}
+.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid $color-grey1;
+    background: $color-gray2;
+}
+
+form {
+    padding-top: 0.5rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
+}
+
+button {
+    border-radius: 0.5rem;
+    color: white;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-color: $color-primary !important;
+    background: $color-primary !important;
+}
+
+.form-check {
+    & > .form-check-input {
+        border-radius: 1px;
+        border-color: $color-black;
+
+        &:checked{
+            background-color: $color-primary;
+        }
+    }
+
+    & > label {
+        @extend p;
+        margin: 0;
+    }
+}
+
+.signIn {
+    align-items: baseline;
+    margin: 0;
+
+    & > * {
+        padding: 0;
+
+        & > p {
+            text-align: end;
+            margin: 0;
+        }
+    }
+}
