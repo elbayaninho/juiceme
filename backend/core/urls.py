@@ -1,12 +1,14 @@
-from django.urls import path
+from django.urls import path, include
 from rest_framework.authtoken.views import obtain_auth_token
 from django.conf import settings
 from django.conf.urls.static import static
+from core.viewset import UserViewSet
 
 from . import views
 
 urlpatterns = [
     path('auth/', obtain_auth_token),
+    path('auth/users', UserViewSet.as_view({'get': 'list'}), name='users'),
 
     path('candidate/<int:pk>', views.CandidateDetailAPIView.as_view(), name='candidate-detail'),
     path('candidate/create',views.CandidateCreateAPIView.as_view()),
