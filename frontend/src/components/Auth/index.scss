@@ -1,17 +1,19 @@
 @import "../../components/Shared/colors.scss";
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Prompt:wght@200&display=swap");
 
-.container {
+.auth-container {
     display: flex;
     padding-top: 2rem;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    padding-left: 15rem;
+    padding-right: 15rem;
     overflow: hidden;
+    height: 100%;
 }
 
-h1 {
+.auth-header {
     color: $color-primary;
     font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
@@ -22,7 +24,7 @@ h1 {
     letter-spacing: -0.0075rem;
 }
 
-p {
+.auth-paragraph {
     color: $color-black;
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
@@ -60,12 +62,6 @@ p {
     background: $color-gray2;
 }
 
-form {
-    padding-top: 0.5rem;
-    padding-left: 13rem;
-    padding-right: 13rem;
-}
-
 button {
     border-radius: 0.5rem;
     color: white;
@@ -80,25 +76,25 @@ button {
         border-radius: 1px;
         border-color: $color-black;
 
-        &:checked{
+        &:checked {
             background-color: $color-primary;
         }
     }
 
     & > label {
-        @extend p;
+        @extend .auth-paragraph;
         margin: 0;
     }
 }
 
-.signIn {
+.auth-row {
     align-items: baseline;
     margin: 0;
 
     & > * {
         padding: 0;
 
-        & > p {
+        & > .auth-paragraph {
             text-align: end;
             margin: 0;
         }

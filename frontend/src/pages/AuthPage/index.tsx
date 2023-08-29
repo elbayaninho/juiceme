@@ -2,8 +2,8 @@ import { Col, Image, Row } from "react-bootstrap"
 import logo from "../../assets/logo-white.svg"
 import dashboard from "../../assets/dashboard.svg"
 import './index.scss'
-import SignIn from "../../components/SignIn"
-const Login = () => {
+import Auth from "../../components/Auth"
+const AuthPage = () => {
 
     return(
             <Row id="row" >
@@ -15,7 +15,7 @@ const Login = () => {
                  </div>
                 </Col>
                 <Col sm={6} md={8} lg={8}>
-                    <SignIn/>
+                    <Auth/>
                 </Col>
 
             </Row>
@@ -24,4 +24,4 @@ const Login = () => {
 
 }
 
-export default Login
+export default AuthPage
