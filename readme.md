@@ -7,6 +7,8 @@ This project was create with JUICEME Team
 
 # There are two folders (backend => django and frontend => reactjs)
 
+# 0. Python version 3.11.4
+
 # 1. Run the django project
 
 - Go to backend project 
