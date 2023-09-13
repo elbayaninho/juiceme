@@ -1,4 +1,3 @@
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from "../../assets/logo.svg"
@@ -7,8 +6,9 @@ import { Button } from 'react-bootstrap';
 const NavbarParent = () => {
    return(
       <Navbar expand="lg" className="bg-body-white">
-      <Container>
-        <Navbar.Brand href="#home"><img alt='Juiceme Logo' src={logo} /></Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img alt='Juiceme Logo' src={logo} />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-toggle" />
         <Navbar.Collapse>
           <Nav  >
@@ -19,7 +19,6 @@ const NavbarParent = () => {
             </Button>
           </Nav>
         </Navbar.Collapse>
-      </Container>
     </Navbar>
    )
 };
