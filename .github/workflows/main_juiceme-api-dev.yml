@@ -15,7 +15,7 @@ on:
   
 defaults:
   run:
-    working-directory: ./backend
+    working-directory: ${{ env.W_DIRECTORY }}
 
 jobs:
   build:
@@ -59,7 +59,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: python-app
-          path: .
+          path: ${{ env.W_DIRECTORY }}
           
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
