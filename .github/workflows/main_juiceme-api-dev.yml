@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - juiceme-api-dev
+name: Build and deploy API - juiceme-api-dev
 
 env:
   W_DIRECTORY: ./backend
