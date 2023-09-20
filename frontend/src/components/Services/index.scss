@@ -1,6 +1,5 @@
 @import "../Shared/colors.scss";
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Prompt:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Prompt:wght@200&display=swap");
 
 #services {
     display: flex;
@@ -28,27 +27,26 @@
         background-color: $color-geyser !important;
         color: $color-black;
         padding: 0.25em 0.5em;
-        font-size: 80%;
+        font-size: 100%;
         font-style: normal;
         align-self: start;
         font-weight: 500;
         line-height: 1.75em; /* 140% */
         letter-spacing: -0.00625em;
     }
-    h5 {
-        font-family: "Nunito", sans-serif;
+    h4 {
         font-size: 160%;
         font-style: normal;
         font-weight: bolder;
-        line-height: 1.5em; /* 135.714% */
-        letter-spacing: 0.015em;
+        line-height: 1.2em; /* 135.714% */
+        letter-spacing: 0.01em;
     }
     p {
-        font-size: 100%;
+        font-size: 110%;
         font-style: normal;
-        font-weight: 600;
-        line-height: 140%; /* 140% */
-        letter-spacing: -0.006em;
+        font-weight: 900;
+        line-height: 140%;
+        letter-spacing: 0.006em;
     }
     button {
         padding: 0.625em 1.25em;

@@ -12,7 +12,7 @@ const Services = () => {
                 <img src={service1} alt='Service one'/>
                 <div className='content'>
                 <Badge>Providing earned wages access</Badge>    
-                <h5>Anyday is Payday</h5>
+                <h4>Anyday is Payday</h4>
                 <p>Does you employee have an expense that can’t wait until payday? By providing this solution at zero cost to your organization with no charges to your payroll structure. Your become an employer of choice, attracts and retains top talents and boots productivity.</p>
                 <Button>Apply Now</Button>
                 </div>
@@ -21,7 +21,7 @@ const Services = () => {
             <img src={service2} alt='Service one'/>
             <div className='content'>
                 <Badge>HR and Payroll management</Badge>    
-                <h5>Leveraging WhatsApp to improve your HR and payroll system</h5>
+                <h4>Leveraging WhatsApp to improve your HR and payroll system</h4>
                 <p>Our holistic HR system caters to both desk and deskless employees by leveraging the power of convenience.</p>
                 <Button>Get Started</Button>
                 </div>
@@ -31,7 +31,7 @@ const Services = () => {
 
             <div className='content'>
                 <Badge>Working capital financing</Badge>    
-                <h5>Supporting SMEs grow their bussinesses</h5>
+                <h4>Supporting SMEs grow their bussinesses</h4>
                 <p>Juice enables your business to turn your unpaid invoices into cash so that you can pay your supplier and cover operational expenses with no downtime. Let’s say you got an order to make school uniforms and you don’t have the money..</p>
                 <Button>Get Started</Button>
                 </div>

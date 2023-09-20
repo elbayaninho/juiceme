@@ -1,0 +1,97 @@
+@import "../Shared/colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Prompt:wght@200&display=swap");
+
+#software-add-on {
+    padding-top: 2em;
+    background-color: $color-primary;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+
+    .badge {
+        border-radius: 0.5em;
+        background-color: $color-dark-navy !important;
+        padding: 0.25em 0.5em;
+        font-size: 100%;
+        color: $color-white;
+        font-style: normal;
+        margin-left: 10%;
+        font-weight: 500;
+        line-height: 1.75em; /* 140% */
+        letter-spacing: -0.00625em;
+    }
+    h4 {
+        font-size: 160%;
+        font-style: normal;
+        font-weight: bolder;
+        margin-left: 10%;
+        padding: 0.5em 0 ;
+        line-height: 1.2em; /* 135.714% */
+        letter-spacing: 0.01em;
+    }
+
+    h5{
+        font-size: 130%;
+        font-style: normal;
+        font-weight: bolder;
+        padding: 0.7em 0 ;
+        display: flex;
+        gap: 2%;
+        line-height: 1.2em; /* 135.714% */
+        letter-spacing: 0.01em;
+    }
+
+    h6{
+        font-size: 100%;
+        font-style: normal;
+        font-weight: bolder;
+        padding: 0.7em 0 ;
+        margin-left: 10%;
+        line-height: 1.2em; /* 135.714% */
+        letter-spacing: 0.01em;
+    }
+
+    p {
+        font-size: 90%;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 140%;
+        letter-spacing: 0.006em;
+    }
+    &> div:nth-child(2){
+        display: flex;
+        flex-wrap: wrap;
+        gap:10%;
+        justify-content: center;
+    }
+    &> div:nth-child(3){
+        display: flex;
+        gap:10%;
+
+        justify-content: center;
+
+    }
+
+    &>div:last-child{
+       & > div{
+         flex-basis: 35%;
+       }
+    }
+
+    @media only screen and (max-width: 768px) {
+       &> div{
+        width: 80%;
+        margin: auto;
+       }
+       & > img{
+            width: 30%;
+        }
+       h4,.badge,h5,h6{
+        margin-left: unset;
+       }
+        &>div:last-child{
+           flex-direction: column;
+        }
+
+    }
+
+}
