@@ -1,20 +1,17 @@
 @import "../Shared/colors.scss";
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Prompt:wght@200&display=swap");
 
-@media (min-width: 992px) {
+@media (min-width:992px){
     .navbar-expand-lg .navbar-collapse {
-        display: flex;
         justify-content: flex-end;
-    }
-    .navbar-expand-lg .navbar-nav {
-        align-items: center;
     }
 }
 
 nav {
-    margin-left: 6rem;
-    margin-right: 6rem;
-    .navbar-nav{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+     .navbar-nav{
         gap:4.5rem;
     }
     .nav-link {

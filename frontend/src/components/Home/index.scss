@@ -2,116 +2,166 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Prompt:wght@200&display=swap");
 
 #home {
-    margin-top: 3rem;
+    margin-top: 3em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(-17deg, #0F4C81 52%, #0F4C81 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%, #0F4C81 100%);
+
+    @media only screen and (max-width: 768px) {
+        background: linear-gradient(-20deg, #0F4C81 57%, #0F4C81 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%, #0F4C81 100%);
+
+    }
 }
 #call-to-action {
     display: flex;
-    justify-content: space-between;
+    gap: 10%;
     font-family: "Nunito", sans-serif;
-    background-image: url('../../assets/home-background.svg') ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    div {
-        margin-left: 7rem;
-        margin-right: 7rem;
-        margin-bottom: 20rem;
+    div:first-child{
+        flex-basis: 40%;
+        margin-left: 10%;
     }
+
     h2 {
         color: $color-black;
-        font-size: 3.25rem;
+        font-size: 300%;
         font-style: normal;
         font-weight: 800;
-        width: 37rem;
-        line-height: 4rem; /* 123.077% */
-        letter-spacing: -0.01625rem;
+        line-height: 120%; /* 123.077% */
+        letter-spacing: -0.01625em;
     }
 
     p {
         color: $color-black;
-        font-size: 1.25rem;
+        font-size: 130%;
         font-style: normal;
-        width: 35rem;
         font-weight: 600;
-        line-height: 1.75rem; /* 140% */
-        letter-spacing: 0.03125rem;
+        line-height: 140%; /* 140% */
+        letter-spacing: 0.03125em;
     }
 
     button {
-        border-radius: 0.5rem;
-        padding: 0.875rem 1.25rem;
-        margin-right: 1rem;
+        padding: 0.875em 1.25em;
         border: 1px solid $color-primary;
         background-color: $color-primary;
         color: $color-white;
     }
 
-    button:last-child {
-        background-color: $color-white;
-        color: $color-black;
+
+
+    & > div:last-child {
+        flex-basis: 25%;
+        height: 22.5em;
+        background-color: $color-light-grey;
     }
 
-    div:last-child {
-        width: 20rem;
-        height: 20rem;
-        margin-right: 7rem;
-        background-color: $color-grey;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        div:first-child{
+            text-align: center;
+            margin-left: 0;
+            margin-bottom: 5em;
+        }
+
+        & > div:last-child {
+            flex-basis: unset !important;
+            width: 80%;
+            margin: auto;
+        }
+        h2{
+            font-size: 250%;
+        }
     }
 }
 
-
 #mission {
-    background-color: $color-primary;
     font-family: "Nunito", sans-serif;
     color: $color-white;
-    height: 15rem;
+    padding-top: 9em;
     box-sizing: border-box;
-
+    display: flex;
+    flex-direction: column;
     #partners {
         display: flex;
         justify-content: center;
-        gap: 10rem;
+        width: 50%;
+        padding-bottom: 3em;
+        gap: 10%;
+        align-self: center;
+
+        img{
+            width: 25%;
+        }
+
     }
 
     .badge {
-        margin-left: 7rem;
-        border-radius: 0.5rem;
+        border-radius: 0.5em;
         background-color: $color-blue !important;
-        padding: 0.25rem 0.5rem;
-        font-size: 1.25rem;
+        padding: 0.25em 0.5em;
+        font-size: 80%;
+        margin-left: 10%;
+        color: $color-white;
         font-style: normal;
+        align-self: start;
         font-weight: 500;
-        line-height: 1.75rem; /* 140% */
-        letter-spacing: -0.00625rem;
+        line-height: 1.75em; /* 140% */
+        letter-spacing: -0.00625em;
     }
 
     h4 {
-        margin-left: 7rem;
-        padding-top: 1.5rem;
-        font-size: 1.75rem;
+        padding-top: 1.5em;
+        font-size: 150%;
+        margin-left: 10%;
         font-style: normal;
-        font-weight: 700;
-        line-height: 2.375rem; /* 135.714% */
-        letter-spacing: 0.01563rem;
+        font-weight: 900;
+        line-height: 1.5em; /* 135.714% */
+        letter-spacing: 0.01563em;
     }
 
     div:last-child {
         display: flex;
-        gap: 3rem;
-        margin-top: 2rem;
-        margin-left: 7rem;
+        gap: 3em;
+        margin-top: 2em;
+        justify-content: center;
 
         p {
-            width: 14.5rem;
-            height: 4.25rem;
-            font-size: 1rem;
+            width: 14.5em;
+            height: 4.25em;
+            font-size: 95%;
             font-style: normal;
             font-weight: 500;
-            line-height: 1.375rem; /* 137.5% */
-            letter-spacing: -0.01rem;
+            line-height: 1.375em; /* 137.5% */
+            letter-spacing: -0.01em;
             border-right: 1px solid $color-white;
         }
         p:last-child {
             border-right: none;
+        }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding-top: 5em;
+
+        div:last-child{
+            flex-direction: column;
+            align-items: center;
+            background-color: $color-primary;
+
+            p{
+                border-right: none;
+                border-bottom: 1px solid $color-white;
+                width: 60%;
+                text-align: center;
+            }
+
+            p:last-child {
+                border-bottom: none;
+            }
+        }
+
+        #partners{
+            width: 70%;
         }
     }
 }

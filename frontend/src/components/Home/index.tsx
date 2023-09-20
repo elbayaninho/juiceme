@@ -1,4 +1,4 @@
-import { Badge } from 'react-bootstrap'
+import { Badge, Button } from 'react-bootstrap'
 import shoprite from '../../assets/shoprite.svg'
 import './index.scss'
 const Home = () => {
@@ -9,15 +9,11 @@ const Home = () => {
                 <div>
                     <h2>Customer-centric technology for African Employees and SMEs.</h2>
                     <p>Streamline your business operations, financing and people management with our integrated solution and the power of WhatsApp.</p>
-                    <button>Book Demo</button>
-                    <button>Learn more</button>
+                    <Button>Book Demo</Button>
                 </div>
                 <div>
 
                 </div>
-            </div>
-            <div id="svg">
-
             </div>
             <div id="mission">
                 <div id="partners">

@@ -1,0 +1,86 @@
+@import "../Shared/colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Prompt:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Prompt:wght@200&display=swap");
+
+#services {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 100%;
+    margin-top: 5%;
+
+    > .service:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+}
+.service {
+    display: flex;
+    font-family: "Nunito", sans-serif;
+    gap: 5%;
+    margin-bottom: 2%;
+    width: 100%;
+    justify-content: center;
+
+    & > div {
+        flex-basis: 35%;
+    }
+    .badge {
+        background-color: $color-geyser !important;
+        color: $color-black;
+        padding: 0.25em 0.5em;
+        font-size: 80%;
+        font-style: normal;
+        align-self: start;
+        font-weight: 500;
+        line-height: 1.75em; /* 140% */
+        letter-spacing: -0.00625em;
+    }
+    h5 {
+        font-family: "Nunito", sans-serif;
+        font-size: 160%;
+        font-style: normal;
+        font-weight: bolder;
+        line-height: 1.5em; /* 135.714% */
+        letter-spacing: 0.015em;
+    }
+    p {
+        font-size: 100%;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 140% */
+        letter-spacing: -0.006em;
+    }
+    button {
+        padding: 0.625em 1.25em;
+        margin-right: 1%;
+        border: 1px solid $color-primary;
+        background-color: $color-primary;
+        color: $color-white;
+    }
+    button:hover {
+        background-color: $color-primary;
+        border: 1px solid $color-primary;
+    }
+    img {
+        width: 30%;
+        flex-basis: 35%;
+    }
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column !important;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        & > div{
+            flex-basis: unset;
+        }
+        img{
+            flex-basis: unset;
+            width: 100%;
+            padding-bottom: 2em;
+        }
+        button{
+            margin-bottom: 4em;
+        }
+    }
+}
