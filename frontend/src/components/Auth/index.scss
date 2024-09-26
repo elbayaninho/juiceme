@@ -1,0 +1,102 @@
+@import "../../components/Shared/colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Prompt:wght@200&display=swap");
+
+.auth-container {
+    display: flex;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    overflow: hidden;
+    height: 100%;
+}
+
+.auth-header {
+    color: $color-primary;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.0075rem;
+}
+
+.auth-paragraph {
+    color: $color-black;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.005rem;
+    margin-top: 0.5rem;
+
+    a {
+        font-size: 0.875rem;
+        font-style: normal;
+        text-decoration: none;
+        color: $color-primary;
+        font-family: "Nunito", sans-serif;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.00438rem;
+    }
+}
+
+.form-label {
+    color: $color-black;
+    font-family: "Nunito", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.00438rem;
+}
+.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid $color-grey1;
+    background: $color-gray2;
+}
+
+button {
+    border-radius: 0.5rem;
+    color: white;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-color: $color-primary !important;
+    background: $color-primary !important;
+}
+
+.form-check {
+    & > .form-check-input {
+        border-radius: 1px;
+        border-color: $color-black;
+
+        &:checked {
+            background-color: $color-primary;
+        }
+    }
+
+    & > label {
+        @extend .auth-paragraph;
+        margin: 0;
+    }
+}
+
+.auth-row {
+    align-items: baseline;
+    margin: 0;
+
+    & > * {
+        padding: 0;
+
+        & > .auth-paragraph {
+            text-align: end;
+            margin: 0;
+        }
+    }
+}

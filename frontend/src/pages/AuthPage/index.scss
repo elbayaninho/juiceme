@@ -1,0 +1,45 @@
+@import "../../components/Shared/colors.scss";
+ 
+#container{
+    margin: 0;
+    height: 100vh ;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#row{
+    margin: 0;
+}
+
+.logo{
+    margin-left:3rem;
+    margin-top:3rem ;
+    margin-bottom: 2rem;
+}
+.imageContainer{
+    height: 23rem;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.typograph {
+    color: $color-white;
+    font-family: Nunito;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.005rem;
+    height: 4rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    margin-right:4rem;
+}
+
+#col-left {
+    background-color: $color-primary;
+    color: $color-white;
+    box-sizing: border-box;
+    padding: 0;
+    height: 100vh;
+ }
